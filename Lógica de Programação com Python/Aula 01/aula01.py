@@ -88,66 +88,35 @@ print("A multiplicação é:", num1 * num2)
 # Realizando a divisão
 print("A divisão é:", num1 / num2)
 
-
 # ==========================================================
 # Parte 2 - Strings: Índices e Fatiamento (Slicing)
 # ==========================================================
 
-# Uma string é uma sequência de caracteres.
-# Podemos acessar cada caractere individualmente através
-# da sua posição (índice) e também extrair "pedaços"
-# dela através do fatiamento (slicing).
+texto = "Python"
 
+# Primeiro caractere
+print(texto[0])
 
-# ----------------------------------------------------------
-# Indexação
-# ----------------------------------------------------------
-
-# Use colchetes [ ] para acessar um caractere pela sua
-# posição (índice).
-
-# A indexação em Python começa em 0:
-# o primeiro caractere está no índice 0,
-# o segundo no índice 1, e assim por diante.
-
-# Índices negativos contam a partir do final:
-# -1 é o último caractere,
-# -2 é o penúltimo, e assim por diante.
+# Último caractere
+print(texto[-1])
 
 
 # ----------------------------------------------------------
 # Fatiamento (Slicing)
 # ----------------------------------------------------------
 
-# A sintaxe [início:fim:passo] permite extrair uma parte
-# de uma string ou de outra sequência.
+# Do índice 0 até o índice 2
+# O índice final não é incluído
+print(texto[0:3])
 
-# [::] copia a sequência inteira.
+# Copia a string inteira
+print(texto[::])
 
-# Um número após o segundo dois-pontos, como [::2],
-# define o intervalo entre os elementos selecionados.
+# Pega os caracteres pulando de 2 em 2
+print(texto[::2])
 
-# [::-1] inverte a sequência.
-
-
-# ----------------------------------------------------------
-# Exemplos
-# ----------------------------------------------------------
-
-texto = "Python"
-
-# Primeiro caractere
-print(texto[0])        # P
-
-# Último caractere
-print(texto[-1])       # n
-
-# Do índice 0 ao 2
-print(texto[0:3])      # Pyt
-
-# String invertida
-print(texto[::-1])     # nohtyP
-
+# Inverte a string
+print(texto[::-1])
 
 # ==========================================================
 # Exercício 06 - Primeiro caractere
